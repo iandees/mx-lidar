@@ -51,7 +51,7 @@ xargs -I {} -P 24 -n 1 \
       sh -c 'export f={}; ./convert_bil_to_geotiff.sh $f ${f/_fixed.zip/.tif}'
 ```
 
-## Upload merged GeoTIFFs
+## Upload GeoTIFFs
 
 For example:
 
