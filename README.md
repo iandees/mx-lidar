@@ -56,6 +56,6 @@ xargs -I {} -P 24 -n 1 \
 For example:
 
 ```
-find /mnt/uklidar/ -regex ".*[0-9].tif" -print | \
-xargs -P 24 -n 1 -I {} -t sh -c 'export f="{}"; aws s3 cp $f s3://elevation-sources-prod/uk_lidar/$(basename $f)'
+find /mnt/mxlidar/ -regex ".*[0-9].tif" -print | \
+xargs -P 24 -n 1 -I {} -t sh -c 'export f="{}"; aws s3 cp $f s3://elevation-sources-prod/mx_lidar/$(basename $f)'
 ```
